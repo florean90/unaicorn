@@ -1,0 +1,8 @@
+# Ignore ssh keys
+*.pem
+
+# Ignore pycache files
+*.pyc
+
+# Ignore git token
+git_tocken.txt
