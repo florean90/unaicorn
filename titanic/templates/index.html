@@ -6,9 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Titanic predictor</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-    <h1>Working!</h1>
+    <h1>Home page</h1>
+    <button type="button" onclick="clicked()">Javascript test</button>
     <a href="{% url 'result' %}">Result</a>
     <h3>Get your titanic prediction here!</h3>
     <p>Enter in the details of a made up person on the titanic voyage</p>
@@ -34,5 +37,6 @@
         <input type="text" name="title">
         <input type="submit">
     </form>
+    <script type="text/javascript" src="{% static 'main.js' %}"></script>
 </body>
 </html>
